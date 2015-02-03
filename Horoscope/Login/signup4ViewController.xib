@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="signup4ViewController">
+            <connections>
+                <outlet property="faceButton" destination="Jjz-An-QSp" id="Eke-nP-qZi"/>
+                <outlet property="photoBooth" destination="Q0q-58-2Ds" id="1F0-kr-0jF"/>
+                <outlet property="takePhoto" destination="9Ya-fU-fqO" id="3ME-rP-idU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jqH-IY-Qa5">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regeback.png" translatesAutoresizingMaskIntoConstraints="NO" id="Whx-Ti-ISY">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xQv-d9-P9V">
+                            <rect key="frame" x="150" y="88" width="200" height="50"/>
+                            <subviews>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textNormal.png" translatesAutoresizingMaskIntoConstraints="NO" id="L8X-hs-Mg9">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                </imageView>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fogetPass.png" translatesAutoresizingMaskIntoConstraints="NO" id="EE3-bI-xay">
+                                    <rect key="frame" x="1" y="3" width="50" height="50"/>
+                                </imageView>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="next.png" translatesAutoresizingMaskIntoConstraints="NO" id="JB5-WJ-RQd">
+                                    <rect key="frame" x="151" y="4" width="50" height="50"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0q-58-2Ds">
+                                    <rect key="frame" x="3" y="-1" width="200" height="58"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="相册照片">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="getPhotoFromBooth:" destination="-1" eventType="touchUpInside" id="ui2-Wo-t7j"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="3zb-46-T47"/>
+                                <constraint firstAttribute="height" constant="50" id="7NG-XU-8TW"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="3zb-46-T47"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tCS-IK-Srh">
+                            <rect key="frame" x="150" y="152" width="200" height="50"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textNormal.png" translatesAutoresizingMaskIntoConstraints="NO" id="eJd-Lv-3f3">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fogetPass.png" translatesAutoresizingMaskIntoConstraints="NO" id="vZm-He-xM3">
+                                    <rect key="frame" x="1" y="3" width="50" height="50"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="next.png" translatesAutoresizingMaskIntoConstraints="NO" id="2mH-Yv-Us3">
+                                    <rect key="frame" x="151" y="4" width="50" height="50"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ya-fU-fqO">
+                                    <rect key="frame" x="3" y="-1" width="200" height="58"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="拍照">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="getPhotoFromeCamere:" destination="-1" eventType="touchUpInside" id="oO0-FT-I6d"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="7Vl-6n-f4f"/>
+                                <constraint firstAttribute="height" constant="50" id="a1u-Ky-bx1"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjz-An-QSp">
+                            <rect key="frame" x="40" y="88" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="4Tz-6I-8u2"/>
+                                <constraint firstAttribute="width" secondItem="Jjz-An-QSp" secondAttribute="height" multiplier="1:1" id="69x-xI-m5f"/>
+                                <constraint firstAttribute="width" constant="120" id="jgL-9w-bkb"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="uzi-rp-OuH"/>
+                                <constraint firstAttribute="height" constant="100" id="xwT-RT-Xn2"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="jgL-9w-bkb"/>
+                                    <exclude reference="uzi-rp-OuH"/>
+                                    <exclude reference="xwT-RT-Xn2"/>
+                                </mask>
+                            </variation>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传真实头像能让你获得更多的关注！头像会有专人审核，如果图片涉及色情等不良信息，小心遭到封号处理哦～" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0w0-uh-sJl">
+                            <rect key="frame" x="10" y="225" width="590" height="109"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="109" id="8ta-tb-jF4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xQv-d9-P9V" firstAttribute="leading" secondItem="Jjz-An-QSp" secondAttribute="trailing" constant="10" id="0bN-Bs-VIc"/>
+                        <constraint firstItem="Whx-Ti-ISY" firstAttribute="top" secondItem="jqH-IY-Qa5" secondAttribute="top" id="22h-MO-PUU"/>
+                        <constraint firstAttribute="trailing" secondItem="xQv-d9-P9V" secondAttribute="trailing" constant="191" id="Axh-Q4-2cW"/>
+                        <constraint firstItem="xQv-d9-P9V" firstAttribute="leading" secondItem="Jjz-An-QSp" secondAttribute="trailing" constant="10" id="Dcm-1N-msv"/>
+                        <constraint firstItem="Jjz-An-QSp" firstAttribute="leading" secondItem="jqH-IY-Qa5" secondAttribute="leading" constant="20" id="F5l-He-nGf"/>
+                        <constraint firstItem="tCS-IK-Srh" firstAttribute="leading" secondItem="Jjz-An-QSp" secondAttribute="trailing" constant="10" id="JTV-ot-Acm"/>
+                        <constraint firstItem="0w0-uh-sJl" firstAttribute="leading" secondItem="jqH-IY-Qa5" secondAttribute="leading" constant="10" id="SML-Uq-wLd"/>
+                        <constraint firstItem="xQv-d9-P9V" firstAttribute="trailing" secondItem="tCS-IK-Srh" secondAttribute="trailing" id="WB3-Qv-vmK"/>
+                        <constraint firstItem="xQv-d9-P9V" firstAttribute="top" secondItem="jqH-IY-Qa5" secondAttribute="top" constant="88" id="aNe-ff-uRb"/>
+                        <constraint firstAttribute="trailing" secondItem="Whx-Ti-ISY" secondAttribute="trailing" id="ct0-Pu-62B"/>
+                        <constraint firstItem="Whx-Ti-ISY" firstAttribute="leading" secondItem="jqH-IY-Qa5" secondAttribute="leading" id="diL-er-wrX"/>
+                        <constraint firstItem="tCS-IK-Srh" firstAttribute="top" secondItem="xQv-d9-P9V" secondAttribute="bottom" constant="14" id="h7r-cI-AfK"/>
+                        <constraint firstAttribute="trailing" secondItem="0w0-uh-sJl" secondAttribute="trailing" id="izj-60-wJr"/>
+                        <constraint firstAttribute="bottom" secondItem="Whx-Ti-ISY" secondAttribute="bottom" id="nik-gQ-wFt"/>
+                        <constraint firstItem="Jjz-An-QSp" firstAttribute="top" secondItem="jqH-IY-Qa5" secondAttribute="top" constant="88" id="wID-dV-P7U"/>
+                        <constraint firstItem="0w0-uh-sJl" firstAttribute="top" secondItem="Jjz-An-QSp" secondAttribute="bottom" constant="37" id="wLa-b3-LuU"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="F5l-He-nGf"/>
+                            <exclude reference="Axh-Q4-2cW"/>
+                            <exclude reference="Dcm-1N-msv"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jqH-IY-Qa5" secondAttribute="bottom" id="BAA-Cl-zba"/>
+                <constraint firstItem="jqH-IY-Qa5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DRL-oh-lB2"/>
+                <constraint firstAttribute="trailing" secondItem="jqH-IY-Qa5" secondAttribute="trailing" id="DTi-TO-YKV"/>
+                <constraint firstItem="jqH-IY-Qa5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="blZ-U7-wqz"/>
+                <constraint firstItem="jqH-IY-Qa5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mU2-2F-iX8"/>
+                <constraint firstAttribute="trailing" secondItem="jqH-IY-Qa5" secondAttribute="trailing" id="qVT-gy-s2f"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="DTi-TO-YKV"/>
+                    <exclude reference="mU2-2F-iX8"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="118" y="344"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fogetPass.png" width="44" height="44"/>
+        <image name="next.png" width="44" height="44"/>
+        <image name="regeback.png" width="320" height="480"/>
+        <image name="textNormal.png" width="261" height="47"/>
+    </resources>
+</document>

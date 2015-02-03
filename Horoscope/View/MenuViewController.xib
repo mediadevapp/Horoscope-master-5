@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController">
+            <connections>
+                <outlet property="backImage" destination="uqf-9q-FgG" id="0a1-Y2-ZYO"/>
+                <outlet property="newsView" destination="UQO-i0-X6M" id="jnA-YG-xu7"/>
+                <outlet property="showView" destination="7fU-Ok-l5D" id="NP6-Xc-ysM"/>
+                <outlet property="starNews" destination="sv4-rE-QVU" id="qnf-HM-Vpb"/>
+                <outlet property="starSay" destination="08M-cl-JMz" id="YXB-XW-paC"/>
+                <outlet property="superShow" destination="GEn-OJ-B9w" id="X8U-FM-RXk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景.png" id="uqf-9q-FgG">
+                    <rect key="frame" x="0.0" y="-1" width="600" height="601"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sv4-rE-QVU">
+                    <rect key="frame" x="0.0" y="238" width="313" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" backgroundImage="星资讯－正常.png"/>
+                    <connections>
+                        <action selector="news:" destination="-1" eventType="touchUpInside" id="neT-Hg-rlh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GEn-OJ-B9w">
+                    <rect key="frame" x="-1" y="183" width="313" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" backgroundImage="达人秀－正常.png"/>
+                    <connections>
+                        <action selector="superShown:" destination="-1" eventType="touchUpInside" id="MFW-m5-ds7"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="UQO-i0-X6M">
+                    <rect key="frame" x="0.0" y="351" width="320" height="217"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1PX-TZ-rH6">
+                    <rect key="frame" x="0.0" y="351" width="313" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" backgroundImage="发现－正常.png"/>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q9z-39-YIP">
+                    <rect key="frame" x="0.0" y="409" width="313" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" backgroundImage="星友－正常.png"/>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3Ob-hw-aee">
+                    <rect key="frame" x="0.0" y="459" width="313" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" backgroundImage="星友圈－正常.png"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="头像_02.png" id="0un-eA-KR6">
+                    <rect key="frame" x="17" y="59" width="149" height="108"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="08M-cl-JMz">
+                    <rect key="frame" x="1" y="295" width="313" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" backgroundImage="星友说－正常.png"/>
+                    <connections>
+                        <action selector="friendSay:" destination="-1" eventType="touchUpInside" id="0fw-Id-E3f"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="7fU-Ok-l5D">
+                    <rect key="frame" x="0.0" y="351" width="320" height="217"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zYz-41-5ve">
+                    <rect key="frame" x="17" y="59" width="149" height="108"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didClickMine:" destination="-1" eventType="touchUpInside" id="35k-Aa-eD7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="405" y="102"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="发现－正常.png" width="750" height="109"/>
+        <image name="头像_02.png" width="379" height="278"/>
+        <image name="星友圈－正常.png" width="749" height="109"/>
+        <image name="星友说－正常.png" width="750" height="129"/>
+        <image name="星友－正常.png" width="750" height="109"/>
+        <image name="星资讯－正常.png" width="750" height="129"/>
+        <image name="背景.png" width="750" height="1334"/>
+        <image name="达人秀－正常.png" width="750" height="129"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

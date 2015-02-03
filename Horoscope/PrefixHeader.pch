@@ -1,0 +1,102 @@
+//
+//  PrefixHeader.pch
+//  Horoscope
+//
+//  Created by Satellite on 14/12/2.
+//  Copyright (c) 2014年 施傲天. All rights reserved.
+//
+
+#ifndef Horoscope_PrefixHeader_pch
+#define Horoscope_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+   #import <UIKit/UIKit.h>
+   #import <Foundation/Foundation.h>
+   #import <SystemConfiguration/SystemConfiguration.h>
+#import "AppDelegate.h"
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import "AFNetworking.h"
+#import "SBJSON.h"
+#import "NSString+SBJSON.h"
+#import "MBProgressHUD.h"
+#import "AFAppDotNetAPIClient.h"
+#import "NSObject+SBJSON.h"
+//#import "RequestTaskService.h"
+#import "NetManager.h"
+#import "TempDate.h"
+#import "UMSocial.h"
+#import "MJRefresh.h"
+#import "NSLog.h"
+#import "UserCache.h"
+#import "UMSocialWechatHandler.h"
+#import "UMSocialQQHandler.h"
+#import "UMSocialSinaHandler.h"
+
+//#import "RequestTaskService.h"
+#endif
+
+
+#define NBBaseUrl @"http://120.131.70.218"
+//http://star.allappropriate.com/book.php
+
+
+#define YSKEY @"14898fc797ac4929b8d725965498c22c"
+
+#define SHAREQQID @"1103841525"
+#define SHAREWXID @"wxbccec73ac4a300c1"
+#define SHAREQQAPPKEY @"TarlNqE6S1bgBfxc"
+#define SHAREWXAPPKEY @"56ad72bc5586aa55443ef50f62dd0299"
+#define KMYUSERID @"ThisIsMyUserid" //个人userid
+#define MYINFODICT @"myinfoDictionaryIsMineNotYour---wx"
+
+// view的 X,y , width , height
+
+#define width(m) m.bounds.size.width
+#define height(m) m.bounds.size.height
+#define x(m) m.frame.origin.x
+#define y(m) m.frame.origin.y
+
+#define sx(m) width(m) + x(m)
+#define sy(m) height(m) + y(m)
+
+//屏幕宽高
+#define KScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define KScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+#define KUIImage(image) [UIImage imageNamed:image]
+
+#define RootDocPath ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0])
+#define kColorWithRGB(r, g, b, a) \
+[UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:a]
+
+#define UIColorFromRGBA(rgbValue, alphaValue) \
+[UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:alphaValue]
+
+#define RGB(r, g, b)             [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:1.0]
+#define RGBAlpha(r, g, b, a)     [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:(a)]
+
+#define HexRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define HexRGBAlpha(rgbValue,a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
+
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+#define KISDictionaryHaveKey(dict,key) [[dict allKeys] containsObject:key] && ([dict objectForKey:key] != (NSString*)[NSNull null]) ? [dict objectForKey:key] : @""
+
+
+#define KISHighVersion_7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+
+#define KTopHeight KISHighVersion_7?64:44
+
+#define KTopY KScreenHeight-KTopHeight
+#endif

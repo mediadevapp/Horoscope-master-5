@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SingupViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sigup.png" translatesAutoresizingMaskIntoConstraints="NO" id="odB-K4-pof">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVX-0z-SXc">
+                    <rect key="frame" x="171" y="309" width="259" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textNormal.png" translatesAutoresizingMaskIntoConstraints="NO" id="VwX-u9-cWh">
+                            <rect key="frame" x="0.0" y="0.0" width="259" height="50"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtO-96-dvz">
+                            <rect key="frame" x="3" y="-1" width="251" height="58"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="手机号登录">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="0AL-jE-ABG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="clA-X4-XCu"/>
+                        <constraint firstAttribute="width" constant="259" id="j0q-vk-NXt"/>
+                        <constraint firstAttribute="height" constant="50" id="rdT-vr-osx"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jif-Zh-nZO">
+                    <rect key="frame" x="171" y="373" width="259" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textNormal.png" translatesAutoresizingMaskIntoConstraints="NO" id="3fp-Kx-ToY">
+                            <rect key="frame" x="0.0" y="0.0" width="259" height="50"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEp-cD-6QM">
+                            <rect key="frame" x="3" y="-1" width="251" height="58"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="注册">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="regeAction:" destination="-1" eventType="touchUpInside" id="e9W-1D-zH5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="259" id="90K-YZ-A9w"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="98C-wY-WKE"/>
+                        <constraint firstAttribute="height" constant="50" id="LdC-YZ-jfY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Jif-Zh-nZO" firstAttribute="top" secondItem="aVX-0z-SXc" secondAttribute="bottom" constant="14" id="1Di-tl-waH"/>
+                <constraint firstItem="aVX-0z-SXc" firstAttribute="leading" secondItem="Jif-Zh-nZO" secondAttribute="leading" id="1jO-DV-lhQ"/>
+                <constraint firstItem="odB-K4-pof" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cm4-GE-S3f"/>
+                <constraint firstItem="odB-K4-pof" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Oxm-gx-Nhd"/>
+                <constraint firstAttribute="bottom" secondItem="odB-K4-pof" secondAttribute="bottom" id="UA0-zj-bR3"/>
+                <constraint firstAttribute="centerX" secondItem="aVX-0z-SXc" secondAttribute="centerX" id="Udi-iM-cJu"/>
+                <constraint firstAttribute="bottom" secondItem="odB-K4-pof" secondAttribute="bottom" id="VQU-41-pJM"/>
+                <constraint firstItem="aVX-0z-SXc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="309" id="ajq-9B-IR7"/>
+                <constraint firstAttribute="centerX" secondItem="Jif-Zh-nZO" secondAttribute="centerX" id="hZK-BB-cxl"/>
+                <constraint firstItem="odB-K4-pof" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="khi-8m-g4P"/>
+                <constraint firstAttribute="trailing" secondItem="odB-K4-pof" secondAttribute="trailing" id="lUu-6K-Xb0"/>
+                <constraint firstItem="odB-K4-pof" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tNc-lV-51p"/>
+                <constraint firstAttribute="trailing" secondItem="odB-K4-pof" secondAttribute="trailing" id="wjG-Pc-Z3X"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="sigup.png" width="320" height="568"/>
+        <image name="textNormal.png" width="261" height="47"/>
+    </resources>
+</document>

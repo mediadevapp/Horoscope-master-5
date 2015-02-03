@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="signup1ViewController">
+            <connections>
+                <outlet property="telPhoneNumber" destination="4wi-2Z-qnD" id="kfP-ie-VP5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBq-jx-NnD">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regeback.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Jx-OO-9G0">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjJ-M5-ps9">
+                            <rect key="frame" x="171" y="88" width="259" height="50"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textNormal.png" translatesAutoresizingMaskIntoConstraints="NO" id="mmh-wW-oS4">
+                                    <rect key="frame" x="0.0" y="0.0" width="259" height="50"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="next.png" translatesAutoresizingMaskIntoConstraints="NO" id="nuI-5r-1F1">
+                                    <rect key="frame" x="201" y="4" width="50" height="50"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1B-FS-xMe">
+                                    <rect key="frame" x="3" y="-1" width="251" height="58"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="中国（＋86）">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="259" id="Gyl-Yj-iqk"/>
+                                <constraint firstAttribute="height" constant="50" id="KhU-Oq-CfX"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZh-wR-UkP">
+                            <rect key="frame" x="171" y="151" width="259" height="66"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textNormal.png" translatesAutoresizingMaskIntoConstraints="NO" id="wzr-y4-30M">
+                                    <rect key="frame" x="0.0" y="0.0" width="259" height="50"/>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4wi-2Z-qnD">
+                                    <rect key="frame" x="66" y="-6" width="193" height="66"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="259" id="pIW-f2-hsO"/>
+                                <constraint firstAttribute="height" constant="66" id="vVF-yh-ckA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="6Jx-OO-9G0" secondAttribute="bottom" id="0UK-ty-YTq"/>
+                        <constraint firstAttribute="centerX" secondItem="jjJ-M5-ps9" secondAttribute="centerX" id="4mh-I4-PdD"/>
+                        <constraint firstItem="6Jx-OO-9G0" firstAttribute="leading" secondItem="WBq-jx-NnD" secondAttribute="leading" id="Iiu-28-qFd"/>
+                        <constraint firstAttribute="centerX" secondItem="aZh-wR-UkP" secondAttribute="centerX" id="KKb-GU-R3i"/>
+                        <constraint firstItem="jjJ-M5-ps9" firstAttribute="top" secondItem="aZh-wR-UkP" secondAttribute="bottom" constant="-129" id="aqX-h0-uTA"/>
+                        <constraint firstAttribute="trailing" secondItem="6Jx-OO-9G0" secondAttribute="trailing" id="kD1-71-fKr"/>
+                        <constraint firstItem="jjJ-M5-ps9" firstAttribute="top" secondItem="WBq-jx-NnD" secondAttribute="top" constant="88" id="p1G-xp-jlq"/>
+                        <constraint firstItem="6Jx-OO-9G0" firstAttribute="top" secondItem="WBq-jx-NnD" secondAttribute="top" id="phK-FK-lkn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WBq-jx-NnD" secondAttribute="bottom" id="C8a-ww-68b"/>
+                <constraint firstItem="WBq-jx-NnD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QY8-P5-fTS"/>
+                <constraint firstAttribute="trailing" secondItem="WBq-jx-NnD" secondAttribute="trailing" id="aRk-Gs-Vnu"/>
+                <constraint firstItem="WBq-jx-NnD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="u0F-RA-V2T"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="next.png" width="44" height="44"/>
+        <image name="regeback.png" width="320" height="480"/>
+        <image name="textNormal.png" width="261" height="47"/>
+    </resources>
+</document>

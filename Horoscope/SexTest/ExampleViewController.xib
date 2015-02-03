@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExampleViewController">
+            <connections>
+                <outlet property="contentSrollView" destination="3eD-O5-IXy" id="B6G-II-am2"/>
+                <outlet property="headViews" destination="p1w-Ud-IGy" id="QS1-U4-zbG"/>
+                <outlet property="testCount" destination="704-LV-4tq" id="cES-PK-tSZ"/>
+                <outlet property="textTitle" destination="se6-Il-zJ9" id="GuS-Yk-7sS"/>
+                <outlet property="timeLable" destination="HjX-RI-hYx" id="cu7-xt-jIW"/>
+                <outlet property="view" destination="wXa-cR-iao" id="uDy-MY-BBd"/>
+                <outlet property="zhunLabel" destination="NMT-wZ-e2o" id="WUd-PK-Mmw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="wXa-cR-iao">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1w-Ud-IGy">
+                    <rect key="frame" x="0.0" y="60" width="600" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ceshiqitaye@2X.png" translatesAutoresizingMaskIntoConstraints="NO" id="QYJ-AM-XpJ">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NzP-oW-V36">
+                            <rect key="frame" x="0.0" y="150" width="600" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="准31人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMT-wZ-e2o">
+                                    <rect key="frame" x="124" y="15" width="118" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="测试56人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="704-LV-4tq">
+                                    <rect key="frame" x="20" y="15" width="96" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3小时前" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjX-RI-hYx">
+                                    <rect key="frame" x="531" y="15" width="61" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="HjX-RI-hYx" firstAttribute="top" secondItem="NzP-oW-V36" secondAttribute="top" constant="15" id="FEw-UW-Mzm"/>
+                                <constraint firstAttribute="height" constant="50" id="Rn7-RC-iEx"/>
+                                <constraint firstAttribute="trailing" secondItem="HjX-RI-hYx" secondAttribute="trailing" constant="8" id="pzH-fm-cr3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="NzP-oW-V36" firstAttribute="leading" secondItem="p1w-Ud-IGy" secondAttribute="leading" id="4Sm-sS-U6g"/>
+                        <constraint firstItem="QYJ-AM-XpJ" firstAttribute="top" secondItem="p1w-Ud-IGy" secondAttribute="top" id="Avq-6g-vZb"/>
+                        <constraint firstAttribute="trailing" secondItem="NzP-oW-V36" secondAttribute="trailing" id="Cxi-iy-bd4"/>
+                        <constraint firstAttribute="bottom" secondItem="QYJ-AM-XpJ" secondAttribute="bottom" id="N23-Cn-tzR"/>
+                        <constraint firstAttribute="trailing" secondItem="QYJ-AM-XpJ" secondAttribute="trailing" id="Wx5-Gv-MCf"/>
+                        <constraint firstAttribute="height" constant="200" id="h1R-rN-Nqt"/>
+                        <constraint firstItem="QYJ-AM-XpJ" firstAttribute="leading" secondItem="p1w-Ud-IGy" secondAttribute="leading" id="hKp-gc-aGh"/>
+                        <constraint firstAttribute="bottom" secondItem="NzP-oW-V36" secondAttribute="bottom" id="jHK-Xa-Dg7"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3eD-O5-IXy">
+                    <rect key="frame" x="0.0" y="268" width="600" height="332"/>
+                    <subviews>
+                        <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="在没有危险的情况下你会和狼群生活吗？" translatesAutoresizingMaskIntoConstraints="NO" id="se6-Il-zJ9">
+                            <rect key="frame" x="29" y="17" width="542" height="43"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3eD-O5-IXy" firstAttribute="top" secondItem="p1w-Ud-IGy" secondAttribute="bottom" constant="8" id="0gC-1J-TVi"/>
+                <constraint firstItem="3eD-O5-IXy" firstAttribute="leading" secondItem="wXa-cR-iao" secondAttribute="leading" id="Q4b-eX-BAD"/>
+                <constraint firstAttribute="trailing" secondItem="3eD-O5-IXy" secondAttribute="trailing" id="Uch-J5-sNc"/>
+                <constraint firstAttribute="trailing" secondItem="p1w-Ud-IGy" secondAttribute="trailing" id="UzK-aW-fI8"/>
+                <constraint firstItem="p1w-Ud-IGy" firstAttribute="leading" secondItem="wXa-cR-iao" secondAttribute="leading" id="hW5-mn-8iX"/>
+                <constraint firstAttribute="bottom" secondItem="3eD-O5-IXy" secondAttribute="bottom" id="i33-YW-PMS"/>
+                <constraint firstItem="p1w-Ud-IGy" firstAttribute="top" secondItem="wXa-cR-iao" secondAttribute="top" constant="60" id="lCg-Fs-BXL"/>
+            </constraints>
+            <point key="canvasLocation" x="429" y="97"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ceshiqitaye@2X.png" width="46" height="46"/>
+    </resources>
+</document>
