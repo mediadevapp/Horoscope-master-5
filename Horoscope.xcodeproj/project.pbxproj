@@ -635,10 +635,10 @@
 		64E349491A5D1F4100DA6B74 /* show_zan.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E349421A5D1F4100DA6B74 /* show_zan.png */; };
 		64E6019F1A7632FA00C07F86 /* XWCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E6019E1A7632FA00C07F86 /* XWCell.m */; };
 		64FF05F41A4A92A4002D8EA3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FF05F31A4A92A4002D8EA3 /* MBProgressHUD.m */; };
-		9A8DB2791A80D74900CB1287 /* lunbo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A8DB2751A80D74900CB1287 /* lunbo4.jpg */; };
 		9A8DB27A1A80D74900CB1287 /* lunbo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A8DB2761A80D74900CB1287 /* lunbo1.jpg */; };
 		9A8DB27B1A80D74900CB1287 /* lunbo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A8DB2771A80D74900CB1287 /* lunbo2.jpg */; };
 		9A8DB27C1A80D74900CB1287 /* lunbo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A8DB2781A80D74900CB1287 /* lunbo3.jpg */; };
+		9A91100E1A81BF3E00AB89F1 /* lunbo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A91100D1A81BF3E00AB89F1 /* lunbo4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1433,10 +1433,10 @@
 		64E6019E1A7632FA00C07F86 /* XWCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCell.m; sourceTree = "<group>"; };
 		64FF05F21A4A92A4002D8EA3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		64FF05F31A4A92A4002D8EA3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		9A8DB2751A80D74900CB1287 /* lunbo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lunbo4.jpg; sourceTree = "<group>"; };
 		9A8DB2761A80D74900CB1287 /* lunbo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lunbo1.jpg; sourceTree = "<group>"; };
 		9A8DB2771A80D74900CB1287 /* lunbo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lunbo2.jpg; sourceTree = "<group>"; };
 		9A8DB2781A80D74900CB1287 /* lunbo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lunbo3.jpg; sourceTree = "<group>"; };
+		9A91100D1A81BF3E00AB89F1 /* lunbo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lunbo4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1691,10 +1691,10 @@
 				5E9754D21A529E46003A4A31 /* images */,
 				5E2D73851A51333300FB8EBA /* SexttestViewController.h */,
 				5E2D73861A51333300FB8EBA /* SexttestViewController.m */,
-				9A8DB2751A80D74900CB1287 /* lunbo4.jpg */,
 				9A8DB2761A80D74900CB1287 /* lunbo1.jpg */,
 				9A8DB2771A80D74900CB1287 /* lunbo2.jpg */,
 				9A8DB2781A80D74900CB1287 /* lunbo3.jpg */,
+				9A91100D1A81BF3E00AB89F1 /* lunbo4.jpg */,
 				5E2D73871A51333300FB8EBA /* SexttestViewController.xib */,
 				5E2D738A1A51348200FB8EBA /* testTableViewCell.h */,
 				5E2D738B1A51348200FB8EBA /* testTableViewCell.m */,
@@ -2906,6 +2906,7 @@
 				648689861A6F4EAA00F10EDA /* xingyou_29@2x.png in Resources */,
 				5E484A911A5FA83300582DE7 /* signup3ViewController.xib in Resources */,
 				64394D281A5E20570034F89E /* UMSCommentDetailController.xib in Resources */,
+				9A91100E1A81BF3E00AB89F1 /* lunbo4.jpg in Resources */,
 				64C727201A3575B300DFE28E /* rank@3x.png in Resources */,
 				5E97558B1A529E46003A4A31 /* aiqing@2x.png in Resources */,
 				646C43A81A37FB2400FB683D /* ys_c_mojie@3x.png in Resources */,
@@ -3012,7 +3013,6 @@
 				64C3AAB31A7768F300A4B9B2 /* xw_share@3x.png in Resources */,
 				645DEEB61A414DCA00E8C524 /* shouji@3x.png in Resources */,
 				648689831A6F4EAA00F10EDA /* xingyou_23@2x.png in Resources */,
-				9A8DB2791A80D74900CB1287 /* lunbo4.jpg in Resources */,
 				646C437F1A37F9F300FB683D /* 双子@2x.png in Resources */,
 				647607C11A3FD7C400B71469 /* 用户图标@3x.png in Resources */,
 				6486897E1A6F4EAA00F10EDA /* xingyou_05@2x.png in Resources */,
