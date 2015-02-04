@@ -193,11 +193,7 @@
 {
     
     
-    //        [_headView setFrame:CGRectMake(0, 0, KScreenWidth, 280)];
-    //        _testTableView.tableHeaderView =_headView;
-    
-    
-    //        _testTableView.frame =self.view.bounds;
+
     
     
 }
