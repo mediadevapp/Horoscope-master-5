@@ -39,20 +39,24 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     _custHeadView =   [nibView objectAtIndex:0];
-    //    _custHeadView.bounds =
     [_custHeadView setFrame:CGRectMake(0, 0, KScreenWidth,280)];
     [self.view addSubview:_custHeadView];
     
     
     _custHeadView.backgroundColor = [UIColor lightGrayColor];
     imageHeight
-    CGSize imagesSize = CGSizeMake(KScreenWidth, 250) ;
+//    CGSize imagesSize = CGSizeMake(_custHeadView.frame.size.width, _custHeadView.frame.size.height);
     
-    UIImage *image1 = [[UIImage imageNamed:@"lunbo1.jpg"]imageByScalingToSize:imagesSize];
-    UIImage *image2 = [[UIImage imageNamed:@"lunbo2.jpg"]imageByScalingToSize:imagesSize];
-    UIImage *image3 = [[UIImage imageNamed:@"lunbo3.jpg"]imageByScalingToSize:imagesSize];
-    UIImage *image4 = [[UIImage imageNamed:@"lunbo4.jpg"]imageByScalingToSize:imagesSize];
+//    UIImage *image1 = [[UIImage imageNamed:@"lunbo1.jpg"]imageByScalingToSize:imagesSize];
+//    UIImage *image2 = [[UIImage imageNamed:@"lunbo2.jpg"]imageByScalingToSize:imagesSize];
+//    UIImage *image3 = [[UIImage imageNamed:@"lunbo3.jpg"]imageByScalingToSize:imagesSize];
+//    UIImage *image4 = [[UIImage imageNamed:@"lunbo4.jpg"]imageByScalingToSize:imagesSize];
     
+    
+    UIImage *image1 = [UIImage imageNamed:@"lunbo1.jpg"];
+    UIImage *image2 = [UIImage imageNamed:@"lunbo2.jpg"];
+    UIImage *image3 = [UIImage imageNamed:@"lunbo3.jpg"];
+    UIImage *image4 = [UIImage imageNamed:@"lunbo4.jpg"];
     
     
     self.arrayImages = [NSArray arrayWithObjects:image1,image2,image3,image4, nil];
@@ -294,92 +298,93 @@
 //扩展UIImage类的方法实现（改变image的大小）
 @implementation UIImage (UIImageExtras)
 
-- (UIImage *)imageByScalingToSize:(CGSize)targetSize
+//- (UIImage *)imageByScalingToSize:(CGSize)targetSize
+//
+//{
 
-{
+//    UIImage *sourceImage = self;
+//    
+//    UIImage *newImage = nil;
+//    
+//    CGSize imageSize = sourceImage.size;
+//    
+//    CGFloat width = imageSize.width;
+//    
+//    CGFloat height = imageSize.height;
+//    
+//    CGFloat targetWidth = targetSize.width;
+//    
+//    CGFloat targetHeight = targetSize.height;
+//    
+//    CGFloat scaleFactor = 0.0;
+//    
+//    CGFloat scaledWidth = targetWidth;
+//    
+//    CGFloat scaledHeight = targetHeight;
+//    
+//    CGPoint thumbnailPoint = CGPointMake(0.0,0.0);
+//    
+//    if (CGSizeEqualToSize(imageSize, targetSize) ==NO) {
+//        
+//        CGFloat widthFactor = targetWidth / width;
+//        
+//        CGFloat heightFactor = targetHeight / height;
+//        
+//        if (widthFactor < heightFactor)
+//            
+//            scaleFactor = widthFactor;
+//        
+//        else
+//            
+//            scaleFactor = heightFactor;
+//        
+//        scaledWidth  = width * scaleFactor;
+//        
+//        scaledHeight = height * scaleFactor;
+//        
+//        // center the image
+//        
+//        if (widthFactor < heightFactor) {
+//            
+//            
+//            
+//            thumbnailPoint.y = (targetHeight - scaledHeight) * 0.5;
+//            
+//        } else if (widthFactor > heightFactor) {
+//            
+//            thumbnailPoint.x = (targetWidth - scaledWidth) * 0.5;
+//            
+//        }
+//        
+//    }
+//    
+//    // this is actually the interesting part:
+//    
+//    UIGraphicsBeginImageContext(targetSize);
+//    
+//    CGRect thumbnailRect = CGRectZero;
+//    
+//    thumbnailRect.origin = thumbnailPoint;
+//    
+//    thumbnailRect.size.width  = scaledWidth;
+//    
+//    thumbnailRect.size.height = scaledHeight;
+//    
+//    [sourceImage drawInRect:thumbnailRect];
+//    
+//    newImage =UIGraphicsGetImageFromCurrentImageContext();
+//    
+//    UIGraphicsEndImageContext();
+//    
+//    if(newImage == nil)
+//    {
+//        
+//        //        NSLog(@"－－－－－－－－－－－－－－could not scale image");
+//    }
+//    return newImage ;
     
-    UIImage *sourceImage = self;
     
-    UIImage *newImage = nil;
-    
-    CGSize imageSize = sourceImage.size;
-    
-    CGFloat width = imageSize.width;
-    
-    CGFloat height = imageSize.height;
-    
-    CGFloat targetWidth = targetSize.width;
-    
-    CGFloat targetHeight = targetSize.height;
-    
-    CGFloat scaleFactor = 0.0;
-    
-    CGFloat scaledWidth = targetWidth;
-    
-    CGFloat scaledHeight = targetHeight;
-    
-    CGPoint thumbnailPoint = CGPointMake(0.0,0.0);
-    
-    if (CGSizeEqualToSize(imageSize, targetSize) ==NO) {
-        
-        CGFloat widthFactor = targetWidth / width;
-        
-        CGFloat heightFactor = targetHeight / height;
-        
-        if (widthFactor < heightFactor)
-            
-            scaleFactor = widthFactor;
-        
-        else
-            
-            scaleFactor = heightFactor;
-        
-        scaledWidth  = width * scaleFactor;
-        
-        scaledHeight = height * scaleFactor;
-        
-        // center the image
-        
-        if (widthFactor < heightFactor) {
-            
-            
-            
-            thumbnailPoint.y = (targetHeight - scaledHeight) * 0.5;
-            
-        } else if (widthFactor > heightFactor) {
-            
-            thumbnailPoint.x = (targetWidth - scaledWidth) * 0.5;
-            
-        }
-        
-    }
-    
-    // this is actually the interesting part:
-    
-    UIGraphicsBeginImageContext(targetSize);
-    
-    CGRect thumbnailRect = CGRectZero;
-    
-    thumbnailRect.origin = thumbnailPoint;
-    
-    thumbnailRect.size.width  = scaledWidth;
-    
-    thumbnailRect.size.height = scaledHeight;
-    
-    [sourceImage drawInRect:thumbnailRect];
-    
-    newImage =UIGraphicsGetImageFromCurrentImageContext();
-    
-    UIGraphicsEndImageContext();
-    
-    if(newImage == nil)
-    {
-        
-        //        NSLog(@"－－－－－－－－－－－－－－could not scale image");
-    }
-    return newImage ; 
-    
-}
+//}
 
 
 @end

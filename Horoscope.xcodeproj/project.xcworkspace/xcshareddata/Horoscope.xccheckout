@@ -12,22 +12,34 @@
 	<dict>
 		<key>7724EAF35E95898F26569CE8205C65DADDE57B46</key>
 		<string>https://github.com/MediaAPPDev/Horoscope.git</string>
+		<key>D0E4508DA3CE0874DF2525BA9930B84E72222A6E</key>
+		<string>https://github.com/mediadevapp/Horoscope-master-5.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Horoscope.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7724EAF35E95898F26569CE8205C65DADDE57B46</key>
+		<string>../../../Horoscope%E6%98%9F%E5%BA%A7%E8%BE%BE%E4%BA%BA</string>
+		<key>D0E4508DA3CE0874DF2525BA9930B84E72222A6E</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/MediaAPPDev/Horoscope.git</string>
+	<string>https://github.com/mediadevapp/Horoscope-master-5.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7724EAF35E95898F26569CE8205C65DADDE57B46</string>
+	<string>D0E4508DA3CE0874DF2525BA9930B84E72222A6E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D0E4508DA3CE0874DF2525BA9930B84E72222A6E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Horoscope-master%205</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
