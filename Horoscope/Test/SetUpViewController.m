@@ -11,7 +11,7 @@
 #import "PassWordChangeViewController.h"
 #import "SafeViewController.h"
 #import "BangdingViewController.h"
-#import "NotifiationViewController.h"s
+#import "NotifiationViewController.h"
 #import "PrivacyViewController.h"
 #import "FeedbackViewController.h"
 #import "AboutMeViewController.h"
@@ -184,7 +184,7 @@
         case 2:
             [self offLine];
             [self showMessageWindowWithContent:@"您已经登出" imageType:0];
-            [self.menuController popViewControllerAnimated:YES];
+//            [self.menuController popViewControllerAnimated:YES];
             [[NSNotificationCenter defaultCenter]postNotificationName:@"GETOUTLOIGN" object:nil];
             break;
         case 3:

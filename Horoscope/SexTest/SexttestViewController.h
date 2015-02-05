@@ -9,14 +9,16 @@
 #import "BaseViewController.h"
 #import "CustHeadView.h"
 //扩展UIImage类的
-@interface UIImage (UIImageExtras)
-
-- (UIImage *)imageByScalingToSize:(CGSize)targetSize;
-
-@end
+//@interface UIImage (UIImageExtras)
+//
+//- (UIImage *)imageByScalingToSize:(CGSize)targetSize;
+//
+//@end
 
 @interface SexttestViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
 {
+
+
     BOOL isFromStart;
     NSInteger ImageHeight;
 }
@@ -34,7 +36,7 @@
 
 
 
-//轮播专用
+//轮播
 @property (nonatomic,strong) CustHeadView *custHeadView;
 @property(nonatomic, strong)NSArray  *arrayImages;          //存放图片的数组
 @property(nonatomic, strong)NSMutableArray *viewController; //存放UIViewController的可变数组

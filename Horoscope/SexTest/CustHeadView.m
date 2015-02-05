@@ -15,7 +15,7 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     // Drawing code
-    
+    [self setFrame:CGRectMake(0, 0, KScreenWidth, 280)];
 //    [self setBackgroundColor:[UIColor redColor]];
 //    [_mailScorllView setBackgroundColor:[UIColor yellowColor]];
 }

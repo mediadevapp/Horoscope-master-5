@@ -65,7 +65,7 @@
     UITextView *text = [[UITextView alloc]init];
     text.text = KISDictionaryHaveKey(dic, @"content");
     
-    float f = [self getContenSizeAction:text];
+//    float f = [self getContenSizeAction:text];
     
     CGSize g = [self labelAutoCalculateRectWith:KISDictionaryHaveKey(dic, @"content") FontSize:14 MaxSize:CGSizeMake(KScreenWidth-28, 400)];
     

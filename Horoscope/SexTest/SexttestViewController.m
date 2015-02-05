@@ -19,7 +19,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-#define imageHeight ImageHeight = 280;
+//#define imageHeight ImageHeight = 280;
 
 
 @interface SexttestViewController ()
@@ -39,12 +39,17 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     _custHeadView =   [nibView objectAtIndex:0];
-    [_custHeadView setFrame:CGRectMake(0, 0, KScreenWidth,280)];
-    [self.view addSubview:_custHeadView];
+//    [_headView setFrame:CGRectMake(0, startX, KScreenWidth,KScreenHeight -(KISHighVersion_7?64:44))];
+//    [_custHeadView setFrame:CGRectMake(0, 0, KScreenWidth,280)];
+//    [self.view addSubview:_custHeadView];
+    _custHeadView.frame = CGRectMake(0,startX, KScreenWidth, KScreenHeight -(KISHighVersion_7?64:44)) ;
+    _testTableView.frame = CGRectMake(0,startX, KScreenWidth, KScreenHeight -(KISHighVersion_7?64:44)) ;      [_custHeadView setFrame:CGRectMake(0, 40, KScreenWidth,280)];
+//    [self.view addSubview:_custHeadView];
     
     
     _custHeadView.backgroundColor = [UIColor lightGrayColor];
-    imageHeight
+    _custHeadView.userInteractionEnabled = NO;
+//    imageHeight
 //    CGSize imagesSize = CGSizeMake(_custHeadView.frame.size.width, _custHeadView.frame.size.height);
     
 //    UIImage *image1 = [[UIImage imageNamed:@"lunbo1.jpg"]imageByScalingToSize:imagesSize];
@@ -67,7 +72,7 @@
     [_custHeadView.mailScorllView setDelegate:self];
     
     //ContentSize 这个属性对于UIScrollView－关键－，取决于是否滚动。
-    [_custHeadView.mailScorllView setContentSize:CGSizeMake(KScreenWidth * [self.arrayImages count], ImageHeight)];
+    [_custHeadView.mailScorllView setContentSize:CGSizeMake(KScreenWidth * [self.arrayImages count], KScreenHeight -(KISHighVersion_7?64:44))];
     
     
     _custHeadView.pageControls.currentPage = 0;
@@ -289,10 +294,10 @@
 }
 @end
 
-
-#pragma mark ---扩展---
+//
+//#pragma mark ---扩展---
 //扩展UIImage类的方法实现（改变image的大小）
-@implementation UIImage (UIImageExtras)
+//@implementation UIImage (UIImageExtras)
 
 //- (UIImage *)imageByScalingToSize:(CGSize)targetSize
 //
@@ -383,4 +388,4 @@
 //}
 
 
-@end
+//@end
